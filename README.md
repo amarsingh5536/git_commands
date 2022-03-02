@@ -159,8 +159,8 @@ First run this command ```git branch -d branch-name``` after then run ```git pus
 
 # Git Revert:
 Description: git revert command is used for undoing changes to a repository's commit.
-```git revert <commit-ID>
-git push --force origin main```
+```git revert <commit-ID>```
+```git push --force origin main```
 Example:
 First run this command ```git revert <commit-ID>``` after then run ```git push --force origin main```.
 
