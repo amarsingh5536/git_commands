@@ -83,7 +83,7 @@ Description: git stash command used to save changes on local \
 ```git stash list``` \
 ```git stash apply {unique id}``` \
 ```git stash pop``` \
-```git stash clean``` \
+```git stash clean``` 
 
 Example 1: \
 save the changes in particular(index) file \
@@ -91,7 +91,7 @@ Run git stash save "changes in index file" \
 changes will save by name "changes in index file" \
 Run git stash list #To check all save satsh list \
 i.e: stash@{0}: On main: changes in index file \
-Run git stash apply stash@{0} when you need changes again in index file \
+Run git stash apply stash@{0} when you need changes again in index file 
 
 Example 2: \
 Save changes to branch A. \
@@ -105,14 +105,14 @@ Run git stash pop / git stash apply stash@{0} #to get your stashed changes back.
 
 # Git cherry-pick:
 Description: using Cherry picking command you can pick a commit from a branch and applying/inherit it to another \
-```git cherry-pick commit_id``` \
+```git cherry-pick commit_id``` 
 
 Example: \
 Save changes to branch A in file index.txt. \
 Run git commit -m "branch A index file changes" \
 Run git push origin A \
 Run git log \
-your last commit is 2ea77c01["branch A index file changes"] \
+your last commit is 2ea77c01["branch A index file changes"] 
 
 Check out branch B. \
 git cherry-pick 2ea77c01 # 2ea77c01 is commit_id \
@@ -122,7 +122,7 @@ Commit and (optionally) push to remote.
 
 # Git merge:
 Description: Git merge is a command that allows you to merge two branches. \
-```git merge branch_name``` #branch_name is the branch you want to merge with current branch \
+```git merge branch_name``` #branch_name is the branch you want to merge with current branch 
 
 Example: \
 1).Suppose originally there were 3 commits, A,B,C in branch main \
@@ -167,11 +167,11 @@ First run this command ```git revert <commit-ID>``` after then run ```git push -
 
 # Git Delete the most recent commit:
 Delete the most recent commit on local, keeping the work: \
-```git reset --soft HEAD~1```  \
+```git reset --soft HEAD~1```  
 
 Delete the most recent commit on remote: \
 ```git reset --hard HEAD~1``` \
-```git push origin master --force``` \
+```git push origin master --force``` 
 
 *If you want again back your commit use cherry-pick command: \
 ```git cherry-pick commit_id```
@@ -180,10 +180,10 @@ Delete the most recent commit on remote: \
 # Git add or remove username/email:
 By command: \
 ```git config --global user.name "amarsingh5536"``` \
-```git config --global user.email "amarsingh5536@gmail.com"``` \
+```git config --global user.email "amarsingh5536@gmail.com"``` 
 
 By changing in config file: \
-Open .gitconfig file with ```nano ~/.gitconfig``` and add email and userer in opened file like as mantioned below: \
+Open .gitconfig file with ```nano ~/.gitconfig``` and add email and userer in opened file like as mantioned below: 
 ```
 [user]
         name = amarsingh5536
