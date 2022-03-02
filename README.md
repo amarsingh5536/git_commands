@@ -1,5 +1,5 @@
 # BASIC GIT COMMANDS
-```THERE IS LISTING OF BASIC GIT COMMAND WILL HELP YOU IN YOUR DAILY WORKS```
+```THERE IS LISTING OF BASIC GIT COMMAND WILL HELP YOU IN YOUR DAILY WORKS.```
 
 # Git Log:
 Description: To check git log(commits details etc all list will come) \
