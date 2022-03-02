@@ -2,7 +2,7 @@
 ```THERE IS LISTING OF BASIC GIT COMMAND WILL HELP YOU IN YOUR DAILY WORKS```
 
 # Git Log:
-Description: To check git log(commits details etc all list will come)
+Description: To check git log(commits details etc all list will come)\
 ```git log```
 
 
