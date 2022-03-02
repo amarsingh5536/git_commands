@@ -149,10 +149,10 @@ Example:
 If you get conflict while rebasing resolve conflicts git add (changes) git rebase --continue
 
 
-# Git Git delete branch:
+# Git delete branch:
 Description: To delete created branch
-```git branch -d branch-name
-   git push origin --delete```
+```git branch -d branch-name```
+```git push origin --delete```
 Example:
 First run this command ```git branch -d branch-name``` after then run ```git push origin --delete```.
 
