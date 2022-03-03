@@ -2,12 +2,12 @@
 ```THERE IS LISTING OF BASIC GIT COMMAND WILL HELP YOU IN YOUR DAILY WORKS.```
 
 # Git Log:
-Description: To check git log(commits details etc all list will come) \
+Description: To check git log(commits details etc all list will come). \
 ```git log```
 
 
 # Git Status:
-Description: To check git status like in how many files your changed \
+Description: To check git status like in how many files your changed. \
 ```git status```
 
 
@@ -16,69 +16,69 @@ Description: To check git status like in how many files your changed \
 
 
 # Git Diff:
-Description: To check git what you changed in file \
+Description: To check git what you changed in file. \
 ```git diff file-name```
 
 
 # Git Add:
-Description: To add file for push the code \
+Description: To add file for push the code. \
 ```git add file-name```
 
 
 # Git Commit:
-Description: To add detail what changes you done! \
+Description: To add detail what changes you done. \
 ```git commit -m "someting is added"```
 
 
 # Git Push:
-Description: To push the code in mentioned branch \
+Description: To push the code in mentioned branch. \
 ```git push origin branch-name```
 
 
 # Git Fetch:
-Description: To fetch all branch name \
+Description: To fetch all branch name. \
 ```git fetch --all```
 
 
 # Git branch checkout:
-Description: To checkout in paticular branch \
+Description: To checkout in paticular branch. \
 ```git checkout origin branch-name```
 
 
 # Git file checkout:
-Description: To checkout in paticular file in same branch / remove changes in paticular file in same branch \
+Description: To checkout in paticular file in same branch / remove changes in paticular file in same branch. \
 ```git checkout file-name```
 
 
 
 # Git Make New Branch:
-Description: To make new branch \
+Description: To make new branch. \
 ```git checkout -b new-branch-name``` \
-To push the all changes in new branch after this command run the git add command then you can push you code in new branch
+To push the all changes in new branch after this command run the git add command then you can push you code in new branch.
 
 
 # Pull request / Merge your branch into base:
 Description: Pull request is all about asks/tell to maintainer/admin for review your branch code and merge into the base branch. \
 steps of creating pull request: \
-1). Make a new branch \
+1). Make a new branch. \
 2). Commit and push the changes in inherited branch. \
-3). Go to github in commit/branch you have pushed \
-4). Click the Compare & pull request button \
+3). Go to github in commit/branch you have pushed. \
+4). Click the Compare & pull request button. \
 5). Select base branch there you want merge your branch. \
 6). Click Create pull request. \
-7). You can add there Reviewers and Assignees  \
-Same you can Merge pull request by Click the Merge pull request button \
-*It is the way too merge your branch into base branch when you are self Reviewers/Assignees
+7). You can add there Reviewers and Assignees.  \
+Same you can Merge pull request by Click the Merge pull request button. \
+*It is the way too merge your branch into base branch when you are self Reviewers/Assignees.
 
 
 # Git Reset:
-Description: git reset command is used to reset the changes \
-```git reset --hard branch-name``` #To reset branch \
-```git reset --hard commit_id``` #To go on particular commit in same branch
+Description: git reset command is used to reset the changes. \
+```git reset --hard branch-name``` #To reset branch. \
+```git reset --hard commit_id``` #To go on particular commit in same branch.
 
 
 # Git Stash:
-Description: git stash command used to save changes on local \
+Description: git stash command used to save changes on local. \
 ```git stash``` \
 ```git stash list``` \
 ```git stash apply {unique id}``` \
@@ -86,43 +86,43 @@ Description: git stash command used to save changes on local \
 ```git stash clean``` 
 
 Example 1: \
-save the changes in particular(index) file \
-Run git stash save "changes in index file" \
-changes will save by name "changes in index file" \
-Run git stash list #To check all save satsh list \
-i.e: stash@{0}: On main: changes in index file \
-Run git stash apply stash@{0} when you need changes again in index file 
+* save the changes in particular(index) file. \
+* Run git stash save "changes in index file". \
+* changes will save by name "changes in index file". \
+* Run git stash list #To check all save satsh list. \
+  i.e: stash@{0}: On main: changes in index file \
+* Run git stash apply stash@{0} when you need changes again in index file.
 
 Example 2: \
-Save changes to branch A. \
-Run git stash. \
-Check out branch B. \
-Fix the bug in branch B. \
-Commit and (optionally) push to remote. \
-Check out branch A \
-Run git stash pop / git stash apply stash@{0} #to get your stashed changes back.
+* Save changes to branch A. \
+* Run git stash. \
+* Check out branch B. \
+* Fix the bug in branch B. \
+* Commit and (optionally) push to remote. \
+* Check out branch A. \
+* Run git stash pop / git stash apply stash@{0} #to get your stashed changes back.
 
 
 # Git cherry-pick:
-Description: using Cherry picking command you can pick a commit from a branch and applying/inherit it to another \
+Description: using Cherry picking command you can pick a commit from a branch and applying/inherit it to another. \
 ```git cherry-pick commit_id``` 
 
 Example: \
-Save changes to branch A in file index.txt. \
-Run git commit -m "branch A index file changes" \
-Run git push origin A \
-Run git log \
-your last commit is 2ea77c01["branch A index file changes"] 
+* Save changes to branch A in file index.txt. \
+* Run git commit -m "branch A index file changes". \
+* Run git push origin A. \
+* Run git log. \
+* your last commit is 2ea77c01["branch A index file changes"].
 
 Check out branch B. \
-git cherry-pick 2ea77c01 # 2ea77c01 is commit_id \
+git cherry-pick 2ea77c01 # 2ea77c01 is commit_id. \
 you can check your branch A commit [branch A index file changes] changes comes in branch B index.txt file \
 Commit and (optionally) push to remote.
 
 
 # Git merge:
 Description: Git merge is a command that allows you to merge two branches. \
-```git merge branch_name``` #branch_name is the branch you want to merge with current branch 
+```git merge branch_name``` #branch_name is the branch you want to merge with current branch.
 
 Example: \
 1).Suppose originally there were 3 commits, A,B,C in branch main \
@@ -136,21 +136,22 @@ If you get conflict while merging resolve conflicts git add (changes) git merge 
 
 # Git Rebase:
 Description :Git rebase is a command that allows developers to integrate changes from one branch to another. \
-```git rebase branch_name```  #branch_name is the branch you want to merge with current branch \
+```git rebase branch_name```  #branch_name is the branch you want to merge with current branch. \
+
 Git Merge and Git Rebase are both used to combine the changes of branches but in a distinct way.
 
 Example: \
 1).Suppose originally there were 3 commits, A,B,C in branch main and same in develop branch. \
-2).your another developer who is working on branch main have made two more changes with commit D, E so in branch main now 5 commits A,B,C,D,E \
-3).Now you want rebase those main branch all commits in develop. you need to run merge command \
-4). git checkout develop \
-5). git rebase main \
+2).your another developer who is working on branch main have made two more changes with commit D, E so in branch main now 5 commits A,B,C,D,E. \
+3).Now you want rebase those main branch all commits in develop. you need to run merge command. \
+4). git checkout develop. \
+5). git rebase main. \
 6). Now main branch's D, E code is reflecting in develop branch as well as in commit history. So now there is 5 commit A,B,C,D,E in straight line  same as main branch in develop commit history. \
-If you get conflict while rebasing resolve conflicts git add (changes) git rebase --continue
+If you get conflict while rebasing resolve conflicts git add (changes) git rebase --continue.
 
 
 # Git delete branch:
-Description: To delete created branch \
+Description: To delete created branch. \
 ```git branch -d branch-name``` \
 ```git push origin --delete``` \
 Example: \
