@@ -84,7 +84,8 @@ Example:
 * Run  ```git reset --hard B_commit_id``` and ```git push origin main --force```.
 * Now your head is on commit B and reset the changes till commit B. 
 * And you have two commit A,B in git log and  C,D commit deleted permanently.
-* This command you can use for delete local commit. but it will reset your commit changes. you can use git stash for save changes on local before reset commit.
+* This command you can use for delete wrong local commits. but it will reset your commit changes. you can use git stash for save changes on local before reset    commit.
+* Don't use reset command to delete commit it will reset changes till commit/id you will passed and deleted above commits.
 
 
 # Git Stash:
