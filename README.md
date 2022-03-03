@@ -74,7 +74,7 @@ Same you can Merge pull request by Click the Merge pull request button. \
 # Git Reset:
 Description: git reset command is used to reset the changes. \
 * To reset branch"
-```git reset --hard branch-name```  \
+```git reset --hard branch-name```  
 * To Reset commit:
 ```git reset --hard commit_id``` 
 Example:
