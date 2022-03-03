@@ -85,21 +85,21 @@ Description: git stash command used to save changes on local. \
 ```git stash pop``` \
 ```git stash clean``` 
 
-Example 1: \
-* save the changes in particular(index) file. \
-* Run git stash save "changes in index file". \
-* changes will save by name "changes in index file". \
+Example 1: 
+* save the changes in particular(index) file. 
+* Run git stash save "changes in index file". 
+* changes will save by name "changes in index file". 
 * Run git stash list #To check all save satsh list. \
-  i.e: stash@{0}: On main: changes in index file \
+  i.e: stash@{0}: On main: changes in index file 
 * Run git stash apply stash@{0} when you need changes again in index file.
 
-Example 2: \
-* Save changes to branch A. \
-* Run git stash. \
-* Check out branch B. \
-* Fix the bug in branch B. \
-* Commit and (optionally) push to remote. \
-* Check out branch A. \
+Example 2: 
+* Save changes to branch A. 
+* Run git stash. 
+* Check out branch B. 
+* Fix the bug in branch B. 
+* Commit and (optionally) push to remote. 
+* Check out branch A. 
 * Run git stash pop / git stash apply stash@{0} #to get your stashed changes back.
 
 
@@ -107,11 +107,11 @@ Example 2: \
 Description: using Cherry picking command you can pick a commit from a branch and applying/inherit it to another. \
 ```git cherry-pick commit_id``` 
 
-Example: \
-* Save changes to branch A in file index.txt. \
-* Run git commit -m "branch A index file changes". \
-* Run git push origin A. \
-* Run git log. \
+Example: 
+* Save changes to branch A in file index.txt. 
+* Run git commit -m "branch A index file changes". 
+* Run git push origin A. 
+* Run git log. 
 * your last commit is 2ea77c01["branch A index file changes"].
 
 Check out branch B. \
@@ -136,7 +136,7 @@ If you get conflict while merging resolve conflicts git add (changes) git merge 
 
 # Git Rebase:
 Description :Git rebase is a command that allows developers to integrate changes from one branch to another. \
-```git rebase branch_name```  #branch_name is the branch you want to merge with current branch. \
+```git rebase branch_name```  #branch_name is the branch you want to merge with current branch. 
 
 Git Merge and Git Rebase are both used to combine the changes of branches but in a distinct way.
 
