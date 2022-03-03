@@ -114,10 +114,10 @@ Example:
 * Run git log. 
 * your last commit is 2ea77c01["branch A index file changes"].
 
-Check out branch B. \
-git cherry-pick 2ea77c01 # 2ea77c01 is commit_id. \
-you can check your branch A commit [branch A index file changes] changes comes in branch B index.txt file \
-Commit and (optionally) push to remote.
+* Check out branch B. \
+* git cherry-pick 2ea77c01 # 2ea77c01 is commit_id. \
+* you can check your branch A commit [branch A index file changes] changes comes in branch B index.txt file \
+  Commit and (optionally) push to remote.
 
 
 # Git merge:
@@ -125,13 +125,13 @@ Description: Git merge is a command that allows you to merge two branches. \
 ```git merge branch_name``` #branch_name is the branch you want to merge with current branch.
 
 Example: \
-1).Suppose originally there were 3 commits, A,B,C in branch main \
-2).your another developer who is working on branch develop have made two more changes with commit D, E so in branch develop now 5 commits A,B,C,D,E \
-3).Now you want those develop branch all commits in main. you need to run merge command \
-4). git checkout main \
-5). git merge develop \
+1).Suppose originally there were 3 commits, A,B,C in branch main. \
+2).your another developer who is working on branch develop have made two more changes with commit D, E so in branch develop now 5 commits A,B,C,D,E. \
+3).Now you want those develop branch all commits in main. you need to run merge command. \
+4). git checkout main. \
+5). git merge develop. \
 6). Now develop branch's D,E commits code is reflecting in main branch with new commit suppose M(ie: Merge branch 'develop' into main). So now there is 4 commit A,B,C and M in commit history. It preserves complete history and chronological order. \
-If you get conflict while merging resolve conflicts git add (changes) git merge --continue
+If you get conflict while merging resolve conflicts git add (changes) git merge --continue.
 
 
 # Git Rebase:
