@@ -73,8 +73,18 @@ Same you can Merge pull request by Click the Merge pull request button. \
 
 # Git Reset:
 Description: git reset command is used to reset the changes. \
-```git reset --hard branch-name``` #To reset branch. \
-```git reset --hard commit_id``` #To go on particular commit in same branch.
+* To reset branch"
+```git reset --hard branch-name```  \
+* To Reset commit:
+```git reset --hard commit_id``` 
+Example:
+* Suppose you have 2 commit in git log A,B.
+* Now you pushed two more commit so now 4 commit in your git log A,B,C,D.
+* you realize you have pushed wrong last two commit is C,D. So you want to rneset your branch till commit B.
+* Run  ```git reset --hard B_commit_id``` and ```git push origin main --force```.
+* Now your head is on commit B and reset the changes till commit B. 
+* And you have two commit A,B in git log and  C,D commit deleted permanently.
+* This command you can use for delete local commit. but it will reset your commit changes. you can use git stash for save changes on local before reset commit.
 
 
 # Git Stash:
