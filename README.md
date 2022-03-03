@@ -80,7 +80,7 @@ Description: git reset command is used to reset the changes. \
 Example:
 * Suppose you have 2 commit in git log A,B.
 * Now you pushed two more commit so now 4 commit in your git log A,B,C,D.
-* you realize you have pushed wrong last two commit is C,D. So you want to rneset your branch till commit B.
+* you realize you have pushed wrong last two commit is C,D. So you want to reset your branch till commit B.
 * Run  ```git reset --hard B_commit_id``` and ```git push origin main --force```.
 * Now your head is on commit B and reset the changes till commit B. 
 * And you have two commit A,B in git log and  C,D commit deleted permanently.
@@ -185,8 +185,17 @@ Delete the most recent commit on remote: \
 ```git reset --hard HEAD~1``` \
 ```git push origin master --force``` 
 
+Delete the most recent commit on remote by reset command:
+* Suppose you have 3 commit in git log A,B,C and you want delete commit C.
+* Copy C commit id/hash.
+* Run  ```git reset --hard B_commit_id``` and ```git push origin main --force```.
+* Now your head is on commit B and reset the changes till commit B. 
+* And you have two commit A,B in git log and  C commit is deleted permanently.
+
 *If you want again back your commit use cherry-pick command: \
 ```git cherry-pick commit_id```
+
+
 
 
 # Git add or remove username/email:
