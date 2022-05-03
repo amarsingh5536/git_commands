@@ -29,6 +29,10 @@ Description: To add file for push the code. \
 Description: To add detail what changes you done. \
 ```git commit -m "someting is added"```
 
+# Git show:
+Description: To show commit detail what changes you done. \
+```git show <commit-hash/id>"```
+
 
 # Git Push:
 Description: To push the code in mentioned branch. \
